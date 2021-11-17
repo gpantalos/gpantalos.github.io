@@ -20,24 +20,41 @@ a {
   font-weight: lighter;
 }
 
-h2 {
-  font-family: Verdana;
-  font-size: 24px;
-}
-
-name {
+h1 {
   font-family: Verdana;
   font-size: 48px;
   font-weight: lighter;
+  text-align: right;
+}
+
+h2 {
+  font-family: Verdana;
+  font-size: 24px;
 }
 
 img {
   object-fit: cover;
   height: 200px;
   width: 200px;
-  border-radius: 50px;
+  border-radius: 100px;
+  margin: 2vw;
 }
 
-body {
-  background-color: rgba(255, 166, 0, 0.01);
+/* .left,
+.right {
+  float: left;
+  width: 20%; 
 }
+
+.main {
+  float: left;
+  width: 60%; 
+}
+
+@media screen and (max-width: 800px) {
+  .left,
+  .main,
+  .right {
+    width: 100%; 
+  }
+} */
