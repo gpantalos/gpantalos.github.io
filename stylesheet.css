@@ -10,25 +10,22 @@ a:hover {
 }
 
 body,
-td,
-th,
-tr,
 p,
-a {
+a,
+h1,
+h2,
+h3 {
   font-family: Verdana;
   font-size: 12px;
   font-weight: lighter;
+  text-align: center;
 }
 
 h1 {
-  font-family: Verdana;
   font-size: 36px;
-  font-weight: lighter;
-  text-align: right;
 }
 
 h2 {
-  font-family: Verdana;
   font-size: 24px;
 }
 
@@ -38,6 +35,11 @@ img {
   width: 200px;
   border-radius: 100px;
   margin: 2vw;
+}
+
+body {
+  padding: 0vw;
+  margin: 0vw;
 }
 
 /* .left,
