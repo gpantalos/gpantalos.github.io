@@ -9,14 +9,11 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
   color: #333333;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle, #f7f7f7, #e0e0e0);
+  background: radial-gradient(white 0%, #e5e5e5 100%);
 }
 
 .container {
@@ -38,7 +35,6 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  flex-wrap: nowrap;
 }
 
 .contact-links a {
@@ -49,36 +45,18 @@ h1 {
   height: 50px;
   margin: 0 20px;
   border-radius: 50%;
-  background-color: #007bff;
   text-decoration: none;
-  color: #ffffff;
+  color: #333333;
   transition: background-color 0.3s ease;
   position: relative;
 }
 
 .contact-links a:hover {
-  background-color: #ff6b3e;
+  color: #ffffff;
 }
 
 .contact-links a i {
   font-size: 24px;
-}
-
-.contact-links a::after {
-  content: attr(aria-label);
-  position: absolute;
-  bottom: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 12px;
-  font-weight: bold;
-  background-color: #333333;
-  color: #ffffff;
-  padding: 4px 8px;
-  border-radius: 4px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .contact-links a:hover::after {
@@ -93,7 +71,7 @@ footer {
   width: 100%;
   text-align: center;
   color: gray;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: lighter;
 }
 
