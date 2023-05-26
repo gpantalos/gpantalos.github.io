@@ -1,62 +1,107 @@
-a {
-  color: #1774d0;
-  text-decoration: none;
-}
-
-a:focus,
-a:hover {
-  color: #f09228;
-  text-decoration: none;
-}
-
-body,
-p,
-a,
-h1,
-h2,
-h3 {
-  font-family: Verdana;
-  font-size: 12px;
-  font-weight: lighter;
-  text-align: center;
-}
-
-h1 {
-  font-size: 36px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-img {
-  object-fit: cover;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  margin: 2vw;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  padding: 0vw;
-  margin: 0vw;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #f7f7f7, #e0e0e0);
 }
 
-/* .left,
-.right {
-  float: left;
-  width: 20%; 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
 }
 
-.main {
-  float: left;
-  width: 60%; 
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222222;
 }
 
-@media screen and (max-width: 800px) {
-  .left,
-  .main,
-  .right {
-    width: 100%; 
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: nowrap;
+}
+
+.contact-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 20px;
+  border-radius: 50%;
+  background-color: #007bff;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.contact-links a:hover {
+  background-color: #ff6b3e;
+}
+
+.contact-links a i {
+  font-size: 24px;
+}
+
+.contact-links a::after {
+  content: attr(aria-label);
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.contact-links a:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: gray;
+  font-size: 8px;
+  font-weight: lighter;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 32px;
   }
-} */
+  .container {
+    padding: 20px;
+  }
+}
